@@ -8,7 +8,7 @@ describe('Temperature test', () => {
         cy.url()
         .should('contains', 'pogoda')
       })
-//Searh input. I can specify 'location' in cypress.json
+//Searh input. You can specify 'location' in cypress.json
       cy.get('.mini-suggest-form')
       .type(Cypress.env('location'))
 //1st popup suggestion
